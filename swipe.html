@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кототіндер - Перегляд анкет</title>
+    <title>KitiTinder - Перегляд анкет</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="content-wrapper">
     <header>
         <h1>Перегляд анкет</h1>
         <button onclick="goHome()">На головну</button>
     </header>
 
-    <div id="profile-card">
-        <img id="profile-image" src="" width="300" height="300">
-        <h2 id="profile-name"></h2>
-        <p id="profile-age"></p>
-        <p id="profile-description"></p>
-        <div>
-            <button onclick="likeProfile()"> Сподобалось</button>
-            <button onclick="dislikeProfile()"> Не сподобалось</button>
-        </div>
+    <div id="profile-container">
     </div>
 
-    <script src="profile.js"></script>
+    <div class="footer-div"><footer>
+        <p>KitiTinder 2025</p>
+    </footer>
+    </div>
+
+    <script src="./js/profile.js"></script>
+    </div>
 </body>
 </html>
