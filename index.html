@@ -1,67 +1,13 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KitiTinder - Знайди свого кота</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header-div">
-    <header>
-        <h1>KITIKITINDER</h1>
-    </header>
-  </div>
-
-    <nav>
-      <div class="main-content">
-      <div class="nav-img">
-        <img src="Frame 1.png">
-      </div>
-      <div class="nav-buttons">
-        <button onclick="startSwiping()">Старт</button>
-        <button onclick="showSection('add')">Додати кота</button>
-        <button onclick="showSection('liked')">Сподобані</button>
-        <button onclick="showSection('manage')">Мої анкети</button>
-      </div>
-      </div>
-    </nav>
-
-    <main id="main-content">
-        <section id="add-section">
-            <h2>Додати нового кота</h2>
-            <form id="create-profile-form">
-                <input type="text" id="cat-name" placeholder="Ім'я кота" required>
-                <input type="text" id="cat-age" placeholder="Вік" required>
-                <textarea id="cat-description" placeholder="Опис" required></textarea>
-                <input type="text" id="cat-image" placeholder="URL зображення" required>
-                <button type="submit">Створити анкету</button>
-                <button type="button" onclick="goHome()">На головну</button>
-            </form>
-        </section>
-
-        <section id="liked-section">
-            <h2>Сподобались коти</h2>
-            <button onclick="goHome()">На головну</button>
-            <div id="liked-profiles-container"></div>
-        </section>
-
-        <section id="manage-section">
-            <h2>Мої анкети</h2>
-            <button onclick="goHome()">На головну</button>
-            <div id="user-profiles-container"></div>
-        </section>
-    </main>
-
-    <div class="footer-div">
-    <footer>
-        <p>KitiTinder 2025</p>
-    </footer>
-  </div>
-
-    <script src="./js/navigation.js"></script>
-    <script src="./js/create .js"></script>
-    <script src="./js/results.js"></script>
-    <script src="./js/manage.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cattinder</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
